@@ -16,6 +16,8 @@
       <li><a href="구글.html">구글</a></li>
       <li><a href="네이버.html">네이버</a></li>
       <li><a href="코드코치.html">코드코치</a></li>
+      <li><a href="입력한내용출력하게하기.html">입출력</a></li>
+      <li><a href="비밀번호.html">비밀번호</a></li>
     </ul>
   </nav>
 
@@ -34,9 +36,6 @@
     <button onclick="output()">출력하기</button><br><br>
     <h4 id="output">여기가 바뀝니다.</h4>
 
-
-
- <!-- 아래부터 자바스크립트 -->
  <script type="text/javascript">
      var temp;
 
@@ -46,7 +45,7 @@
      }
 
      function output(){
-         document.getElementById("output").value = temp;
+         document.getElementById("output").innerHTML = temp;
      }
  </script>
 
