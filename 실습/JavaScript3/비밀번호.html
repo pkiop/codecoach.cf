@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+ </head>
+ <body>
+   <header>
+    <h1><a href="index.html">여기는 제목입니다</a></h1>
+    <img src="뽀로로.jpg" width="150" height="150">
+   </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="구글.html">구글</a></li>
+      <li><a href="네이버.html">네이버</a></li>
+      <li><a href="코드코치.html">코드코치</a></li>
+      <li><a href="입력한내용출력하게하기.html">입출력</a></li>
+      <li><a href="비밀번호.html">비밀번호</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>비밀번호 입력하기</h2>
+
+    <p>
+
+    <script>
+      var password = prompt("비밀번호를 입력하세요 (주인계정 : 1111) (손님계정 : 2222)");
+      if(password == "1111"){
+        document.write("안녕하세요 주인님");
+      } else if (password == "2222"){
+        document.write("환영합니다.")
+      } else{
+        document.write("잘못된 비밀번호 입니다.")
+      }
+    </script>
+
+
+
+
+  </article>
+
+  <footer>
+    <a href="http://google.com">구글</a>
+    <a href="http://google.com">네이버</a>
+    <a href="http://cafe.naver.com/codecoach">코드코치</a>
+    <a href="http://codecoach.cf">처음으로</a>
+  </footer>
+ </body>
+</html>

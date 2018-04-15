@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+ </head>
+ <body>
+   <header>
+    <h1><a href="index.html">여기는 제목입니다</a></h1>
+    <img src="뽀로로.jpg" width="150" height="150">
+   </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="구글.html">구글</a></li>
+      <li><a href="네이버.html">네이버</a></li>
+      <li><a href="코드코치.html">코드코치</a></li>
+      <li><a href="입력한내용출력하게하기.html">입출력</a></li>
+      <li><a href="비밀번호.html">비밀번호</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>입력한 내용 출력하게 하기</h2>
+
+    <p>
+    <script>
+      document.write("이 문장은 JavaScript를 이용해서 작성한 문장입니다.");
+    </script>
+
+    <h3>소개하는 말을 입력하세요</h3>
+
+    <input type="text" id="input"><br><br>
+    <button onclick="input()">입력받기</button>
+    <button onclick="output()">출력하기</button><br><br>
+    <h4 id="output">여기가 바뀝니다.</h4>
+
+ <script type="text/javascript">
+     var temp;
+
+     function input(){
+        var input = document.getElementById("input").value;
+        temp = input;
+     }
+
+     function output(){
+         document.getElementById("output").innerHTML = temp;
+     }
+ </script>
+
+
+
+
+  </article>
+
+  <footer>
+    <a href="http://google.com">구글</a>
+    <a href="http://google.com">네이버</a>
+    <a href="http://cafe.naver.com/codecoach">코드코치</a>
+    <a href="http://codecoach.cf">처음으로</a>
+  </footer>
+ </body>
+</html>
